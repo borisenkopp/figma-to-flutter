@@ -20,7 +20,7 @@ void main(List<String> args) async {
 
   // check
   if(results["token"] == null) return print("a token must be provided");
-  if(results["output"] == null) return print("an ouput file path must be provided");
+  if(results["output"] == null) return print("an output file path must be provided");
   if(results["fileKey"] == null) return print("a fileKey must be provided");
 
   var api = FigmaApiGenerator(Client(), results["token"]);
